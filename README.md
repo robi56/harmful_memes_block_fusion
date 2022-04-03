@@ -27,12 +27,13 @@ Entity wise data preparation , the total converted data is equal to the total nu
 
 File: constraint22_dataset_covid19/annotations/train.jsonl
 
-{"OCR": "Bernie or Elizabeth?\nBe informed.Compare them on the issues that matter.\nIssue: Who makes the dankest memes?\n", "image": "covid_memes_18.png", "hero": [], "villain": [], "victim": [], "other": ["bernie sanders", "elizabeth warren"]}
+```{"OCR": "Bernie or Elizabeth?\nBe informed.Compare them on the issues that matter.\nIssue: Who makes the dankest memes?\n", "image": "covid_memes_18.png", "hero": [], "villain": [], "victim": [], "other": ["bernie sanders", "elizabeth warren"]} ```
 
-<b>Convert to </b>
+<b>Convert to: </b> <br/>
 
-covid_0	train_images/covid_memes_18.png	bernie sanders	3	Bernie or Elizabeth? Be informed.Compare them on the issues that matter. Issue: Who makes the dankest memes? <br/>
-covid_0	train_images/covid_memes_18.png	elizabeth warren	3	Bernie or Elizabeth? Be informed.Compare them on the issues that matter. Issue: Who makes the dankest memes? <br/>
+```id	image	entity	label	text <br/>```
+```covid_0	train_images/covid_memes_18.png	bernie sanders	3	Bernie or Elizabeth? Be informed.Compare them on the issues that matter. Issue: Who makes the dankest memes? <br/>```
+```covid_0	train_images/covid_memes_18.png	elizabeth warren	3	Bernie or Elizabeth? Be informed.Compare them on the issues that matter. Issue: Who makes the dankest memes? <br/>```
 
 <b>Special Notes</b>
 1. Note that due to the security purpose , only 50 samples are added to the data/ folder for skipping data conversion in model training</b> 
