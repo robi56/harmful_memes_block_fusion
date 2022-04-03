@@ -3,7 +3,7 @@ Pytorch code for CONSTRAINT-2022 :Shared Task - Task: Hero, Villain and Victim: 
 
 ## Task description 
 
- The objective is to classify for a given pair of a meme and an entity, whether the entity is being referenced as Hero vs. Villain vs. Victim vs. Other, within that meme. Detials https://constraint-lcs2.github.io/ 
+ The objective is to classify for a given pair of a meme and an entity, whether the entity is being referenced as Hero vs. Villain vs. Victim vs. Other, within that meme. More information  https://constraint-lcs2.github.io/ 
 
 ## Features of the work 
 - Used block fusion 
