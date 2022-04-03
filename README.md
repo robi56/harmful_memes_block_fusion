@@ -3,7 +3,7 @@ Pytorch code for CONSTRAINT-2022 :Shared Task - Task: Hero, Villain and Victim: 
 
 ## Task description 
 
- The objective is to classify for a given pair of a meme and an entity, whether the entity is being referenced as Hero vs. Villain vs. Victim vs. Other, within that meme.
+ The objective is to classify for a given pair of a meme and an entity, whether the entity is being referenced as Hero vs. Villain vs. Victim vs. Other, within that meme. Detials https://constraint-lcs2.github.io/ 
 
 ## Features of the work 
 - Used block fusion 
@@ -38,6 +38,11 @@ covid_0	train_images/covid_memes_18.png	elizabeth warren	3	Bernie or Elizabeth? 
 
 2. To run image related models, related images must be aviable in both train_images and test_images folder</b>
 
+
+
+## Experiments 
+
+We have used five types of combinations to design the relationship between entity and meme using block fusion and attention mechanism. As additional experiments, we used text data augmentation
 
 ### Args
 train_tsv_file_path - tsv file path of combined train data <br/>
