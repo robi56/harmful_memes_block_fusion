@@ -37,7 +37,7 @@ covid_0	train_images/covid_memes_18.png	elizabeth warren	3	Bernie or Elizabeth? 
 <b>Special Notes</b>
 1. Note that due to the security purpose , only 50 samples are added to the data/ folder for skipping data conversion in model training</b> 
 
-2. To run image related models,  images must be needed in both train_images and test_images folder</b>
+2. To run image related models,  images must be needed in both train_images and test_images folder in this directory path. train_images folder needs to contain both train and dev images</b>
 
 
 
