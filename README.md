@@ -58,21 +58,21 @@ We have used six types of combinations to design the relationship between entity
 
 
 ### Entity and OCR_Text ->block fusion
-python src/model_entity_text.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_text.pt --result_path results/entity_text.jsonl --nsamples 50
+`` python src/model_entity_text.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_text.pt --result_path results/entity_text.jsonl --nsamples 50 ``
 
 
 
 ### Entity and Image ->block fusion
-python src/model_entity_image.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_image.pt --result_path results/entity_image.jsonl --nsamples 50
+``python src/model_entity_image.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_image.pt --result_path results/entity_image.jsonl --nsamples 50 ``
 
 ### Entity and [Text, Image] ->block fusion
-python src/model_entity_text_image.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_text_image.pt --result_path results/entity_text_image.jsonl --nsamples 50
+``python src/model_entity_text_image.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_text_image.pt --result_path results/entity_text_image.jsonl --nsamples 50 ``
 
 ### Entity and Attention(Image,Entity) ->block fusion
-python src/model_attention_image.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_image_attention.pt --result_path results/entity_image_attention.jsonl --nsamples 50
+``python src/model_attention_image.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_image_attention.pt --result_path results/entity_image_attention.jsonl --nsamples 50``
 
 ### Entity and Attention(Text,Entity) ->block fusion
-python src/model_attention_text.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_text_attention.pt --result_path results/entity_text_attention.jsonl --nsamples 50
+``python src/model_attention_text.py  --batch_sz 2 --bert_model bert-base-uncased --train_file data/combined_train.tsv  --dev_file data/combined_dev.tsv --test_file data/test_gold.tsv --nepochs 2 --checkpoint_path models/entity_text_attention.pt --result_path results/entity_text_attention.jsonl --nsamples 50``
 
 
 ### Entity and Attention([Text,Image], Entity) ->block fusion
