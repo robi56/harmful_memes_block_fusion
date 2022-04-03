@@ -23,6 +23,7 @@ fasttext==0.9.1 <br/>
 sklearn-crfsuite==0.3.6
 
 ## Data Preparation 
+Entity wise data preparation , the total converted data is equal to the total number of entities in the *.jsonl file. 
 
 File: constraint22_dataset_covid19/annotations/train.jsonl
 
@@ -36,24 +37,24 @@ covid_0	train_images/covid_memes_18.png	elizabeth warren	3	Bernie or Elizabeth? 
 <b>Special Notes</b>
 1. Note that due to the security purpose , only 50 samples are added to the data/ folder for skipping data conversion in model training</b> 
 
-2. To run image related models, related images must be aviable in both train_images and test_images folder</b>
+2. To run image related models,  images must be needed in both train_images and test_images folder</b>
 
 
 
 ## Experiments 
 
-We have used five types of combinations to design the relationship between entity and meme using block fusion and attention mechanism. As additional experiments, we used text data augmentation
+We have used six types of combinations to design the relationship between entity and meme using block fusion and attention mechanism. As additional experiments, we used text data augmentation. 
 
 ### Args
-train_tsv_file_path - tsv file path of combined train data <br/>
-dev_tsv_file_path- tsv file path of combined test data <br/>
-test_tsv_path- tsv file path of text data with gold label <br/>
-checkpoint_path- checkpoint path [*.pt] <br/>
-result_path- result path [*.json] <br/>
-nepoch - no of epochs <br/>
-nsamples - number of samples [-1 for all samples, n-for specific number of samples] <br/>
-batch_sz- batch size <br/>
-bert_model - bert model type [bert-base-uncased,bert-base-cased] <br/>
+<b>train_tsv_file_path</b> - tsv file path of combined train data <br/>
+<b>dev_tsv_file_path</b> - tsv file path of combined test data <br/>
+<b>test_tsv_path</b> - tsv file path of text data with gold label <br/>
+<b>checkpoint_path</b> - checkpoint path [*.pt] <br/>
+<b>result_path</b> - result path [*.json] <br/>
+<b>nepoch</b> - no of epochs <br/>
+<b>nsamples</b> - number of samples [-1 for all samples, n-for specific number of samples] <br/>
+<b>batch_sz</b> - batch size <br/>
+<b>bert_mode</b>l - bert model type [bert-base-uncased,bert-base-cased] <br/>
 
 
 ### Entity and OCR_Text ->block fusion
